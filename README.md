@@ -82,7 +82,7 @@ Note: Do not amend **public commits**!
 * `git log --graph --oneline` : summarized view of commit history
 * `git merge --abort`: prevents merge if conflicts arise
 
-### Working with remote repositories
+## Working with remote repositories
 
 * `git clone link_to_repo.git` : gets copy of remote repository onto your local machine
 * `git config --global credential.helper cache` : caches remote repo's credentials in local machine for 15 minutes
@@ -93,13 +93,13 @@ Note: Do not amend **public commits**!
 * `git rebase branch_name` : does fast-forward merge of current branch with the specified branch
 * `git push -u origin` : pushes changes to the remote object origin, in accordance with current working branch.
 
-## Squashing changes
+### Squashing changes
 
 * `git rebase -i` : Interactive rebasing, offers complete control over the branch's commit history. Helps clean up messy history
 * `git push -f` : Forces a push to the remote repository
 
 
-### Other Notes
+## Other Notes
 
 * **Forking** : Creates a copy of the given repository so that it belongs to our user
 * **Pull request** : Way to send and suggest changes to original owner of repository
