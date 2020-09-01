@@ -36,7 +36,11 @@ Common first commands in Git are:
 * `git commit` : Commits our changes to the **local repository**
 * `git status` : Tells us which category our file is in. Files used by Git can be in one of the following three categories:
 
-> Modified -> Staged -> Committed 
+<p align="center">
+
+```Modified -> Staged -> Committed```
+
+</p>
     
     1. Modified files : Files that have been **locally changed and saved** in the computer.
     2. Staged files: Files that have been set for tracking by Git. (using the `git add` command)
