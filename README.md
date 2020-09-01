@@ -8,7 +8,7 @@ VC Systems help us with:
 * keeps historical copies
 * keeps track of changes
 
-## Diffing files
+### Diffing files
 ``` 
 diff file1 file2 
 diff -u file1 file2
