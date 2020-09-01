@@ -47,6 +47,7 @@ Common first commands in Git are:
 Other basic commands and information are:
 
 * `git commit -a` : Shortcut to stage and commit changes to tracked files in one command and step.
+* `git commit -m "Message"` : One-line commit message
 * **HEAD alias** : Represents curently checked out snapshot of project
 * `git log -p` : Gives information about patch.
 * `git log --stat` : Shows stats about changes in commit.
