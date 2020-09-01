@@ -54,7 +54,62 @@ Other basic commands and information are:
 * `git add -p` Shows unstaged changes and asks if you want to stage it
 * `git diff --staged` : Shows staged changes
 
-    
+
+### Deleting and Renaming Files
+* `git rm file_name` : Deletes file specified.
+* `git mv old_name new_name`: Renames the file
+
+### Undoing changes
+
+* `git checkout` : reverts changes to modified files before they are changed
+* ` git reset` : reverts staged changes
+* `git commit --amend` : edits previous commit and overwrites the previous commit with edited version
+
+Note: Do not amend **public commits**!
+
+### Rollbacks
+
+* `git revert HEAD` : creates new commit with inverse changes
+* `git revert commit_ID`: reverts the commit specified
+
+### Branching and Merging
+
+* `git branch new_branch_name` : creates new branch with name specified
+* `git checkout branch_name` : switches to the branch specified (changes where HEAD points to)
+* `git checkout -b new_branch_name`: one command to create a new branch and switch to it in one step
+* `git branch -d branch_name`: deletes branch specified
+* `git merge branch_to_be_merged`: merges branch specified to the branch HEAD is currently pointing to
+* `git log --graph --oneline` : summarized view of commit history
+* `git merge --abort`: prevents merge if conflicts arise
+
+### Working with remote repositories
+
+* `git clone link_to_repo.git` : gets copy of remote repository onto your local machine
+* `git config --global credential.helper cache` : caches remote repo's credentials in local machine for 15 minutes
+* `git remote` : lists remote repositories
+* `git fetch` : downloads specific objects from remote and doesn't merge
+* `git pull` : downloads updates from the remote branch and merges
+* `git pull -a ` : downloads updates from all remote branches and merges
+* `git rebase branch_name` : does fast-forward merge of current branch with the specified branch
+* `git push -u origin` : pushes changes to the remote object origin, in accordance with current working branch.
+
+## Squashing changes
+
+* `git rebase -i` : Interactive rebasing, offers complete control over the branch's commit history. Helps clean up messy history
+* `git push -f` : Forces a push to the remote repository
+
+
+### Other Notes
+
+* **Forking** : Creates a copy of the given repository so that it belongs to our user
+* **Pull request** : Way to send and suggest changes to original owner of repository
+
+Workflow of Pull Request:
+
+- Fork project and clone the fork
+- Make changes locally and commit
+- Push change while making new branch
+- Open pull request on Github/GitLab and check if the changes can be merged (this shows automatically)
     
 
 
