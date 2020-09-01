@@ -34,15 +34,16 @@ Common first commands in Git are:
 * `git add filename` : Lets the specified file be tracked by Git
 * `git add .` : Adds all the files in the current working directory and subdirectories in the tracking radar for Git
 * `git commit` : Commits our changes to the **local repository**
-* `git status` : Tells us which category our file is in
-    - Files used by Git can be in one of the following three categories:
+* `git status` : Tells us which category our file is in. Files used by Git can be in one of the following three categories:
+
     ``` Modified -> Staged -> Committed ```
+    
     1. Modified files : Files that have been **locally changed and saved** in the computer.
     2. Staged files: Files that have been set for tracking by Git. (using the `git add` command)
     3. Committed files: Files that have had their changes saved in the **local repository**.
 
 
-Other basic commands are:
+Other basic commands and information are:
 
 * `git commit -a` : Shortcut to stage and commit changes to tracked files in one command and step.
 * **HEAD alias** : Represents curently checked out snapshot of project
